@@ -37,7 +37,7 @@ jobs:
       uses: azure/container-apps-deploy-action@v1
       with:
         appSourcePath: ${{ github.workspace }}/C_Sharp/API2
-        acrName: ${{ REGISTRY }}
-        containerAppName: ${{ CONTAINER_APP }}
-        resourceGroup: ${{ RESOURCE_GROUP }}
+        acrName: ${{ env.REGISTRY }}
+        containerAppName: ${{ env.CONTAINER_APP }}
+        resourceGroup: ${{ env.RESOURCE_GROUP }}
       
