@@ -18,12 +18,13 @@
 #
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples/tree/master/FunctionApp
 
-name: Deploy Node.js project to Azure Function App
+name: TEST Deploy Node.js project to Azure Function App
 
 on:
   push:
     branches: ["main"]
     paths: [ "Node/API1/**" ]
+  workflow_dispatch:
 
 env:
   AZURE_FUNCTIONAPP_NAME: 'nvmtestnode'   # set this to your function app name on Azure
