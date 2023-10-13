@@ -27,3 +27,4 @@ jobs:
         acrName: nvmacrwatm
         containerAppName: nvmtestcontainerapp
         resourceGroup: Assignment2
+        environmentVariables: Secret3=secret3 QConn=QConn
