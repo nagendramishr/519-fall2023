@@ -7,7 +7,6 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System.Environment;
 
 namespace API1
 {
@@ -19,7 +18,7 @@ namespace API1
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
-            log.LogInformation($"Secret2 = {GetEnvironmentVariable("Secret2")}");
+            log.LogInformation($"Secret2 = {System.Environment.GetEnvironmentVariable("Secret2")}");
 
             string name = req.Query["name"];
 
