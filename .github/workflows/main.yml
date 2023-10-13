@@ -27,4 +27,4 @@ jobs:
         acrName: nvmacrwatm
         containerAppName: nvmtestcontainerapp
         resourceGroup: Assignment2
-        environmentVariables: Secret3=secretref:secret3 MyStorageConnectionAppSetting=secretref:MyStorageConnectionAppSetting
+        environmentVariables: Secret3=secretref:secret3 MyStorageConnectionAppSetting=secretref:queueconnection
