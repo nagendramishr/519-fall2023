@@ -23,7 +23,7 @@ name: TEST Deploy Node.js project to Azure Function App
 on:
   push:
     branches: ["main"]
-    paths: [ "Node/API1/**" ]
+    paths: [ "Node/API21/**" ]
   workflow_dispatch:
 
 env:
