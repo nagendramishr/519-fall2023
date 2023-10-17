@@ -1,7 +1,7 @@
 import { AzureFunction, Context, HttpRequest } from "@azure/functions"
 
 const queueOutput = output.storageQueue({
-    queueName: 'outqueue',
+    queueName: 'js-queue-items',
     connection: 'MyStorageConnectionAppSetting',
 });
 
