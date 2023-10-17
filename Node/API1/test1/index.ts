@@ -15,7 +15,5 @@ app.http('test1', {
     const body = await request.text();
     context.extraOutputs.set(queueOutput, body);
     return { body: 'Created queue item.' };
-};
-
-
-export default httpTrigger;
+    },
+});
