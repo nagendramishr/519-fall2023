@@ -11,6 +11,13 @@
       ]
     },
     {
+      "name": "myQueueItem",
+      "type": "queue",
+      "direction": "out",
+      "queueName": "js-queue-items",
+      "connection": "MyStorageConnectionAppSetting"
+    },
+    {
       "type": "http",
       "direction": "out",
       "name": "res"
