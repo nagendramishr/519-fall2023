@@ -14,7 +14,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     };
     
     // Inserts a sample message into the queue
-    context.bindings.myQueueItem = "This is a test"
+    context.bindings.myQueueItem = "This is another test"
 
 };
 
